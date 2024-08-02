@@ -19,8 +19,8 @@ func Greet(w http.ResponseWriter, r *http.Request) {
 }
 func GetAllCustomers(w http.ResponseWriter, r *http.Request) {
 	customers := []Customer{
-		{Name: "Ashish", City: "Delhi", Zipcode: "777345"},
-		{Name: "Rob", City: "Delhi", Zipcode: "777345"},
+		{Name: "PAshish", City: "Delhi", Zipcode: "777345"},
+		{Name: "GRob", City: "Delhi", Zipcode: "777345"},
 	}
 	if r.Header.Get("Content-Type") == "application/xml" {
 		w.Header().Add("Content-Type", "application/xml")
